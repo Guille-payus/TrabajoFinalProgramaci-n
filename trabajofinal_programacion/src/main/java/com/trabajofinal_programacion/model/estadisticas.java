@@ -1,3 +1,3 @@
-//public class estadisticas {
+//public class Estadisticas {
 //    
 //}

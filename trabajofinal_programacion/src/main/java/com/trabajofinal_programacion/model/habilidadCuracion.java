@@ -1,6 +1,6 @@
 //package com.trabajofinal_programacion.model;
 //
-//public class habilidadCuracion implements habilidad {
+//public class HabilidadCuracion implements Habilidad {
 //
 //    @Override
 //    public String getId() { return "cura_basica"; }

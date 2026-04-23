@@ -1,6 +1,6 @@
 //package com.trabajofinal_programacion.model;
 
-//public class HabilidadEstado implements habilidad {
+//public class HabilidadEstado implements Habilidad {
 //
 //    @Override
 //    public String getId() { return "escudo"; }
