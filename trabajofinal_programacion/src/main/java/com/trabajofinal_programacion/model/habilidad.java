@@ -1,6 +1,6 @@
 //package com.trabajofinal_programacion.model;
 //
-//public interface habilidad {
+//public interface Habilidad {
 //    String getId();
 //    String getNombre();
 //    String getDescripcion();
