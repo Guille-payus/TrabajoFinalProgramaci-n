@@ -1,16 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trabajofinal_programacion.SecondaryController">
-    <children>
-        <Label text="Secondary View" />
-        <Button fx:id="secondaryButton" text="Switch to Primary View" onAction="#switchToPrimary" />
-    </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-</VBox>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.trabajofinal_programacion.controller.SecondaryController">
+
+    <!-- Parte superior: info de jugador y enemigo -->
+    <top>
+        <HBox alignment="CENTER" spacing="30">
+            <padding>
+                <Insets top="20" right="20" bottom="10" left="20"/>
+            </padding>
+
+            <!-- Jugador -->
+            <VBox alignment="CENTER" spacing="5">
+                <ImageView fx:id="imgJugador"
+                           fitWidth="150"
+                           fitHeight="150"
+                           preserveRatio="true"/>
+                <Label fx:id="lblNombreJugador" text="Jugador"/>
+                <ProgressBar fx:id="barraVidaJugador"
+                             prefWidth="150"
+                             progress="1.0"/>
+            </VBox>
+
+            <!-- Enemigo -->
+            <VBox alignment="CENTER" spacing="5">
+                <ImageView fx:id="imgEnemigo"
+                           fitWidth="150"
+                           fitHeight="150"
+                           preserveRatio="true"/>
+                <Label fx:id="lblNombreEnemigo" text="Enemigo"/>
+                <ProgressBar fx:id="barraVidaEnemigo"
+                             prefWidth="150"
+                             progress="1.0"/>
+            </VBox>
+        </HBox>
+    </top>
+
+    <!-- Centro: log de combate -->
+    <center>
+        <TextArea fx:id="areaLog"
+                  editable="false"
+                  wrapText="true"
+                  prefRowCount="8"/>
+    </center>
+
+    <!-- Inferior: botones de habilidades -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <padding>
+                <Insets top="10" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Button fx:id="btnHab1"
+                    text="Habilidad 1"
+                    onAction="#onHab1"/>
+
+            <Button fx:id="btnHab2"
+                    text="Habilidad 2"
+                    onAction="#onHab2"/>
+
+            <Button fx:id="btnHab3"
+                    text="Habilidad 3"
+                    onAction="#onHab3"/>
+
+            <Button fx:id="btnHab4"
+                    text="Habilidad 4"
+                    onAction="#onHab4"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
