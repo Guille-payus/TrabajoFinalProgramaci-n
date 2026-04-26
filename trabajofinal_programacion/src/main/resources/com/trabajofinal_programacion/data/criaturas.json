@@ -1,0 +1,54 @@
+[
+  {
+    "id": "c1",
+    "nombre": "Dracón",
+    "imagen": "images/dragon.png",
+    "stats": {
+      "vidaMaxima": 100,
+      "vidaActual": 100,
+      "ataque": 20,
+      "defensa": 10,
+      "velocidad": 15
+    },
+    "habilidadesIds": ["fisica_basica", "magica_area", "cura_basica", "escudo"]
+  },
+  {
+    "id": "c2",
+    "nombre": "Gólem",
+    "imagen": "images/golem.png",
+    "stats": {
+      "vidaMaxima": 140,
+      "vidaActual": 140,
+      "ataque": 15,
+      "defensa": 20,
+      "velocidad": 5
+    },
+    "habilidadesIds": ["fisica_basica", "escudo"]
+  },
+  {
+    "id": "c3",
+    "nombre": "Sylph",
+    "imagen": "images/sylph.png",
+    "stats": {
+      "vidaMaxima": 80,
+      "vidaActual": 80,
+      "ataque": 25,
+      "defensa": 5,
+      "velocidad": 25
+    },
+    "habilidadesIds": ["magica_area", "cura_basica"]
+  },
+  {
+    "id": "c4",
+    "nombre": "Bestia",
+    "imagen": "images/beast.png",
+    "stats": {
+      "vidaMaxima": 110,
+      "vidaActual": 110,
+      "ataque": 22,
+      "defensa": 8,
+      "velocidad": 10
+    },
+    "habilidadesIds": ["fisica_basica", "escudo"]
+  }
+]
