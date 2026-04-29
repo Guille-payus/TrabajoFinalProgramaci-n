@@ -29,7 +29,6 @@ public class SecondaryController {
     @FXML private Button btnHab3;
     @FXML private Button btnHab4;
     @FXML private Button btnHab5;
-    @FXML private Button btnHab6;
 
     private Combate combate;
     private List<String> habilidadesJugador;
@@ -59,7 +58,7 @@ public class SecondaryController {
     }
 
     private void configurarBotones() {
-        Button[] botones = {btnHab1, btnHab2, btnHab3, btnHab4, btnHab5, btnHab6};
+        Button[] botones = {btnHab1, btnHab2, btnHab3, btnHab4, btnHab5};
         for (int i = 0; i < botones.length; i++) {
             if (i < habilidadesJugador.size()) {
                 String habId = habilidadesJugador.get(i);
