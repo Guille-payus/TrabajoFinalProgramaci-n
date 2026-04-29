@@ -20,7 +20,8 @@ public class JuegoService {
                 new HabilidadFisica(),
                 new HabilidadMagica(),
                 new HabilidadCuracion(),
-                new HabilidadEstado()
+                new HabilidadEstado(),
+                new HabilidadNueva()
         };
         for (Habilidad h : arr) {
             habilidades.put(h.getId(), h);

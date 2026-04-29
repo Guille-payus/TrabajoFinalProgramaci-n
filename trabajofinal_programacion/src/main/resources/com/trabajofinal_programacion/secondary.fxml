@@ -77,6 +77,10 @@
             <Button fx:id="btnHab4"
                     text="Habilidad 4"
                     onAction="#onHab4"/>
+
+            <Button fx:id="btnHab5"
+                    text="Habilidad 5"
+                    onAction="#onHab5"/>
         </HBox>
     </bottom>
 

@@ -42,6 +42,8 @@
 
             <Button fx:id="btnComenzar"
                     text="Comenzar combate"/>
+            <Button fx:id="btnEnlace"
+                    text="Ver enlace"/>
         </VBox>
     </center>
 

@@ -50,5 +50,18 @@
       "velocidad": 10
     },
     "habilidadesIds": ["fisica_basica", "escudo"]
+  },
+  {
+    "id": "c5",
+    "nombre": "Zombi",
+    "imagen": "images/beast.png",
+    "stats": {
+      "vidaMaxima": 110,
+      "vidaActual": 110,
+      "ataque": 22,
+      "defensa": 8,
+      "velocidad": 10
+    },
+    "habilidadesIds": ["fisica_basica", "escudo", "nueva"]
   }
 ]
